@@ -24,6 +24,7 @@ Author URI: http://sucuri.net
 	GNU General Public License for more details.
 */
 //error_reporting(0);
+
 // SET UP SOME CONSTANTS
 define( 'SUCURI',				'sucurisec' );
 define( 'SUCURI_VERSION',		'1.5.2' );
@@ -36,12 +37,11 @@ define( 'SUCURI_IMG',			SUCURI_URL.'images/' );
 // INTERNATIONALIZATION
 load_plugin_textdomain( SUCURI, null, SUCURI_REL );
 
-
 /* Starting Sucuri side bar. */
 function sucuri_menu() 
 {
     add_menu_page('Sucuri Security', 'Sucuri Security', 'manage_options', 
-                  'sucurisec', 'sucuri_admin_page');
+                  'sucurisec', 'sucuri_admin_page', SUCURI_IMG.'menu-icon.png');
     add_submenu_page('sucurisec', 'Dashboard', 'Dashboard', 'manage_options',
                      'sucurisec', 'sucuri_admin_page');
     add_submenu_page('sucurisec', 'Settings', 'Settings', 'manage_options',
