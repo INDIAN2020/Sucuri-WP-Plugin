@@ -24,7 +24,17 @@ Author URI: http://sucuri.net
 	GNU General Public License for more details.
 */
 //error_reporting(0);
+// SET UP SOME CONSTANTS
+define( 'SUCURI',				'sucurisec' );
+define( 'SUCURI_VERSION',		'1.5.2' );
+define( 'SUCURI_URL',			plugin_dir_url( __FILE__ ) );
+define( 'SUCURI_ABS',			plugin_dir_path( __FILE__ ) );
+define( 'SUCURI_REL',			basename( dirname( __FILE__ ) ) );
+define( 'SUCURI_LANG',			SUCURI_ABS.'i18n/' );
+define( 'SUCURI_IMG',			SUCURI_URL.'images/' );
 
+// INTERNATIONALIZATION
+load_plugin_textdomain( SUCURI, null, SUCURI_REL );
 
 
 /* Starting Sucuri side bar. */
