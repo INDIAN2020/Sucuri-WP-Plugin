@@ -293,7 +293,6 @@ function sucuri_settings_page()
     if($ck !== FALSE && $ck == 'disabled')
     {
         $ck_val = '';
-        return(NULL);
     }
     ?>
     <tr><td><b>Remediation: &nbsp;</b></td><td><input type="checkbox" name="sucuri_re" value="1"<?php echo $ck_val;?> /></td></tr>
@@ -306,7 +305,6 @@ function sucuri_settings_page()
     if($ck !== FALSE && $ck == 'disabled')
     {
         $ck_val = '';
-        return(NULL);
     }
     ?>
     <tr><td><b>Database backup: &nbsp; </b></td> <td><input type="checkbox" name="sucuri_dbb" value="1"<?php echo $ck_val;?> /></td></tr>
@@ -319,7 +317,6 @@ function sucuri_settings_page()
     if($ck !== FALSE && $ck == 'disabled')
     {
         $ck_val = '';
-        return(NULL);
     }
     ?>
     <tr><td><b>Filesystem backup: &nbsp; &nbsp; </b> &nbsp; </td> <td><input type="checkbox" name="sucuri_fsb" value="1"<?php echo $ck_val;?> /></td></tr>
